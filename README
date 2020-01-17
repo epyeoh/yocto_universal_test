@@ -1,2 +1,9 @@
 Yocto Universal Test
 This was a proof of concept where yocto universal automated test (runtime) was portable to other test framework.
+
+Execute Sample Test
+ - Installed OpenVINO to host machine, create python virtual environment for OpenVINO model optimizer
+ - Source python environment for OpenVINO model optimizer
+   $ source /<dir_to_python_virtualenv>/venv3-openvino-r3.1/bin/activate
+ - Execute python unittest using universal test from metaintel
+   $ python -m unittest /<dir_to_store_repository>/yocto_universal_test/pythonunittest/cases/dldt_model_optimizer.py
